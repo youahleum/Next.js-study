@@ -6,17 +6,23 @@ export default function NavBar() {
   const router = useRouter();
   console.log(router);
   return (
-    <nav className={styles.nav}>
+    <nav>
       <Link href="/">
         <a
-          style={{ color: router.pathname === "/" ? "red" : "blue" }}
-          className="cla"
+          className={`${styles.link} ${
+            router.pathname === "/" ? styles.active : ""
+          }`}
         >
           Home
         </a>
       </Link>
       <Link href="/About">
-        <a style={{ color: router.pathname === "/About" ? "red" : "blue" }}>
+        <a
+          className={[
+            styles.link,
+            router.pathname === "/About" ? styles.active : "",
+          ].join(" ")}
+        >
           About Us
         </a>
       </Link>
