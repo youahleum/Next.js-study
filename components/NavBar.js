@@ -18,9 +18,10 @@ export default function NavBar() {
         }
         a {
           text-decoration: none;
+          /* color: red; */
         }
         .active {
-          color: yellow;
+          color: skyblue;
         }
       `}</style>
     </nav>

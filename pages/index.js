@@ -8,7 +8,7 @@ export default function Home() {
       <style jsx global>
         {`
           a {
-            color: white;
+            color: yellow;
           }
         `}
       </style>
