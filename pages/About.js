@@ -1,11 +1,10 @@
 import Head from "next/head";
+import Seo from "../components/Seo";
 
 export default function about() {
   return (
     <>
-      <Head>
-        <title>About | Next Movies</title>
-      </Head>
+      <Seo title="About" />
       <h1>about</h1>
     </>
   );
