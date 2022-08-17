@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Seo from "../../components/Seo";
 
-export default function Detail() {
+export default function Detail({ params }) {
   const router = useRouter();
 
   //1.  아래처럼만 입력을 해주게 된다면 url로 넘어갔을때 server error가 뜨게 된다
@@ -24,7 +24,7 @@ export default function Detail() {
   return (
     <div>
       <Seo title={title} />
-      <h4>{title || "Loading..."}</h4>
+      <h4>{title}</h4>
     </div>
   );
 }
