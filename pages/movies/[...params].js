@@ -24,7 +24,6 @@ export default function Detail() {
         img {
           position:relative;
           left:50%;
-          
           width: 300px;
           margin: 30px 0 0 -150px;
           border-radius: 12px;
