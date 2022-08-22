@@ -28,7 +28,7 @@ export default function Home({ results }) {
     // console.log({ movie });
     router.push(
       {
-        pathname: `/movies/${movie.title}/${movie.id}`,
+        pathname: `/movies/${movie.title}/${movie.id}/${movie.overview}/${movie.poster_path}`,
         query: {
           id: movie.id,
           title: movie.title,

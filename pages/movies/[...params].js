@@ -5,6 +5,7 @@ export default function Detail() {
   // 3. csr로 받은 props
   // export default function Detail({ params }) {
   const router = useRouter();
+  console.log(router);
 
   //1.  아래처럼만 입력을 해주게 된다면 url로 넘어갔을때 server error가 뜨게 된다
   // const [title, id] = router.query.params;
