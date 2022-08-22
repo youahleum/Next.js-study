@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Seo from "../components/Seo";
 
 export default function Home({ results }) {
-  console.log(results);
+  console.log("results", results);
   const router = useRouter();
   // const onClick = (id, title) => {
   //   router.push(`/movies/${title}/${id}`);
@@ -25,11 +25,12 @@ export default function Home({ results }) {
   // };
 
   const onClick = (movie) => {
-    // console.log({ movie });
+    console.log("{ movie }", { movie });
     router.push(
       {
-        pathname: `/movies/${movie.title}/${movie.id}/${movie.overview}/${movie.poster_path}`,
+        pathname: `/movies/${movie.title}/${movie.id}`,
         query: {
+          // movie,
           id: movie.id,
           title: movie.title,
           overview: movie.overview,
